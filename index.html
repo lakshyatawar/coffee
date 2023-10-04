@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#lt123">Coffee<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#lt123">Home</a></li>
+          <li><a href="#container123">Services</a></li>
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#container">Pricing</a></li>
+          <li><a href="#footer23">Contact us</a></li>
+        </ul>          
+          
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section id="lt123">
+    <div class="hero-section">
+      <div class="content123">
+        <h2 class="ravi"> Start Your Day With Fresh Coffee</h2>
+        <p class="bhargavi">
+          Coffee is a popular and beloved beverage enjoyed by 
+          people around the world.Awaken your senses with a steaming cup of liquid motivation.
+        </p>
+        <button>Order Now</button>
+      </div>
+    </div>
+
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    <!-- --------------------------------services------------------------- -->
+    <div id="container123">
+  <div class="row00">
+    <!--  Single Starts  -->
+    <div class="col-md-4 service-block">
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="icon-box"> <i aria-hidden="true" class="fa fa-copy"></i></div>
+          <h3><a href="#">Test Service</a></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="btn-box"> <a href="#" class="theme-btn">View Details</a></div>
+        </div>
+      </div>
+    </div>
+    <!--  Single Ends  -->
+      <div class="col-md-4 service-block">
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="icon-box"> <i aria-hidden="true" class="fa fa-copy"></i></div>
+          <h3><a href="#">Test Service</a></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="btn-box"> <a href="#" class="theme-btn">View Details</a></div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 service-block">
+      <div class="service-block-one">
+        <div class="inner-box">
+          <div class="icon-box"> <i aria-hidden="true" class="fa fa-copy"></i></div>
+          <h3><a href="#">Test Service</a></h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <div class="btn-box"> <a href="#" class="theme-btn">View Details</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- -------------------------------ABout Us----------------------- -->
+
+    <section id="about-us">
+    <div class="about">
+      <img src="coffee.jpeg" class="pic">
+      <div class="text">
+        <h2>About Us</h2>
+        <h5>Front-end Developer & <span>Designer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+        <div class="data">
+        <a href="#" class="hire">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ----------------------------PRICING--------------------------- -->
+    
+     <div id="container">
+    <div class="top">
+      <h1>Plans & Pricing</h1>
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;">Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check()" ; />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Monthly</span></div>
+    </div>
+
+    <div class="package-container">
+      <div class="packages">
+        <h1>Cappuccino</h1>
+        <h2 class="text1">&dollar;1.99</h2>
+        <h2 class="text2">&dollar;1.99</h2>
+        <ul class="list">
+          <li class="first">2000 Subscribers</li>
+          <li>12,000 Emails/month</li>
+          <li>Multi-User Accounts</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="#" class="button button1">Order Now</a>
+      </div>
+      <div class="packages">
+        <h1>Caffè mocha</h1>
+        <h2 class="text1">&dollar;3.65</h2>
+        <h2 class="text2">&dollar;4.65</h2>
+        <ul class="list">
+          <li class="first">Basic +</li>
+          <li>Landing Pages</li>
+          <li>Pop-up Forms</li>
+          <li>Premium Support</li>
+        </ul>
+        <a href="#" class="button button2">Order Now</a>
+      </div>
+      <div class="packages">
+        <h1>Espresso</h1>
+        <h2 class="text1">&dollar;2.99</h2>
+        <h2 class="text2">&dollar;0.99</h2>
+        <ul class="list">
+          <li class="first">Professional +</li>
+          <li>Marketing Automation</li>
+          <li>Instagram Ads</li>
+          <li>Facebook Ads</li>
+        </ul>
+        <a href="#" class="button button3">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+       
+        function check() {
+  var checkBox = document.getElementById("checbox");
+  var text1 = document.getElementsByClassName("text1");
+  var text2 = document.getElementsByClassName("text2");
+
+  for (var i = 0; i < text1.length; i++) {
+    if (checkBox.checked == true) {
+      text1[i].style.display = "block";
+      text2[i].style.display = "none";
+    } else if (checkBox.checked == false) {
+      text1[i].style.display = "none";
+      text2[i].style.display = "block";
+    }
+  }
+}
+check();
+  </script>
+
+  <!-- -------------------------footer------------------------- -->
+
+  <section id="footer23">
+    <div class="container23">
+        <div class="part23">
+              <h3>Contact us</h3>
+              <div class="min23"></div>
+              <ul class="ulist23">
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+                <li>Digital Marketing</li>
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+              </ul>
+        </div>
+        <div class="part23">
+          
+                  <h3>Contact us</h3>
+              <div class="min23"></div>
+              <ul class="ulist23">
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+                <li>Digital Marketing</li>
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+              </ul>          
+
+        </div>
+        <div class="part23">
+          
+                   <h3>Contact us</h3>
+              <div class="min23"></div>
+              <ul class="ulist23">
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+                <li>Digital Marketing</li>
+                <li>Web Application</li>
+                <li>Graphic Design</li>
+              </ul>         
+
+        </div>
+        <div class="part23">
+          
+                       <h3>Contact us</h3>
+              <div class="min23"></div>
+              <div class="icn23">
+                
+                 <div class="logo23">
+                  
+                   <i class="fa fa-address-book"></i>
+
+                 </div>
+                 <div class="logo23">
+                  
+                               <i class="fa fa-facebook"></i>
+
+                 </div>
+                 <div class="logo23">
+                  
+                               <i class="fa fa-twitter"></i>
+
+                 </div>
+                 <div class="logo23">
+                  
+                               <i class="fa fa-clock-o"></i>
+
+                 </div>
+
+              </div>
+
+        </div>
+
+
+    </div>
+    
+  </section>
+
+  <div class="last23">
+    <p> <span>Powered by:- </span> Genext Computer</p>
+  </div>
+
+  </body>
+</html>
